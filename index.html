@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="layout">
+		<div class="header">
+			<h1>JavaScript Practice</h1>
+		</div>
+		<div class="content">
+			<div class="main">
+				<form name="calculator">
+					<input type="text" name="display" class="view" disabled>
+					<table>
+						<tr>
+							<td><input type="button" value="1" class="button" onclick="calculator.display.value += '1'"></td>
+							<td><input type="button" value="2" class="button" onclick="calculator.display.value += '2'"></td>
+							<td><input type="button" value="3" class="button" onclick="calculator.display.value += '3'"></td>
+							<td><input type="button" value="+" class="button" onclick="calculator.display.value += '+'"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="4" class="button" onclick="calculator.display.value += '4'"></td>
+							<td><input type="button" value="5" class="button" onclick="calculator.display.value += '5'"></td>
+							<td><input type="button" value="6" class="button" onclick="calculator.display.value += '6'"></td>
+							<td><input type="button" value="-" class="button" onclick="calculator.display.value += '-'"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="7" class="button" onclick="calculator.display.value += '7'"></td>
+							<td><input type="button" value="8" class="button" onclick="calculator.display.value += '8'"></td>
+							<td><input type="button" value="9" class="button" onclick="calculator.display.value += '9'"></td>
+							<td><input type="button" value="*" class="button" onclick="calculator.display.value += '*'"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="C" class="button" onclick="calculator.display.value ='' "></td>
+							<td><input type="button" value="0" class="button" onclick="calculator.display.value += '0' "></td>
+							<td><input type="button" value="=" class="button" onclick="calculator.display.value = eval(calculator.display.value) "></td>
+							<td><input type="button" value="/" class="button" onclick="calculator.display.value += '/'"></td>
+						</tr>
+					</table>
+				</form>		
+			</div>
+
+		
+	<script>
+		/**var a=10;
+		var b="";
+		if(a%2==0){
+			b="this even number";
+		}else{
+			b="this is odd number";
+		}
+		document.getElementById('eo').innerHTML=b;
+
+
+
+		function cheakEvent(){
+			document.getElementById('event').innerHTML="your event is here";
+		}
+		var a=10;
+		var result=a%2==0?"even number":"odd number";
+		document.write("<h1>"+result+"</h1>");
+		for(i=1; i<=20; i++){
+			if(i==9){
+				continue;
+			}
+			document.write(i+"<br>");
+		}
+		setTimeout(function(){
+			document.write(alert('this is set time out method'));
+		},3000);
+		setTimeout(function(){
+			document.write(alert("this time is out"));
+		},1000);
+		i=0;
+		a= setInterval(function(){
+			i++;
+			alert('this set Interval method');
+			if(i==4){
+				clearInterval(a);
+			}
+		},3000);
+		function clock(){
+			var date= new Date();
+		var hour= date.getHours();
+		var minute= date.getMinutes();
+		var second= date.getSeconds();
+		document.getElementById('hour').innerHTML=hour;
+		document.getElementById('minute').innerHTML=minute;
+		document.getElementById('second').innerHTML=second;
+		}
+		setInterval(clock,1000);
+		var num = prompt("count factorial number");
+		function factorial(n){
+			if(n==0){
+				return 1;
+			}else{
+				return n*factorial(n-1);
+			}
+
+		}
+		document.write(factorial(num));
+
+		var num = prompt("this factorial is");
+		function factorial(n){
+			if(n==0){
+				return 1;
+			}else{
+				return n*factorial(n-1);
+			}
+		}
+		document.write(factorial(num));
+		var day=1;
+		switch(day){
+			case 1:
+			document.write("sunday")
+			break;
+			case 2:
+			document.write("monday")
+			break;
+			case 3:
+			document.write("tuesday")
+			break;
+			case 4:
+			document.write("wednesday")
+		}
+		var date = new Date();
+		var today = date.getDay();
+		switch(today){
+			case 0:
+			document.write("Sunday");
+			break;
+			case 1:
+			document.write("Monday");
+			break;
+			case 2:
+			document.write("Tuesday");
+			break;
+			case 3:
+			document.write("Wednesday");
+			break;
+			case 4:
+			document.write("Thursday");
+			break;
+			case 5:
+			document.write("Friday");
+			break;
+			case 6:
+			document.write("Saturday");
+			default:
+			document.write("wrong");
+			
+
+		}**/
+	
+		
+		
+
+	</script>
+	</div>
+	</div>
+</body>
+</html>
